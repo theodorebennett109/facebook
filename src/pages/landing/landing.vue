@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./landing.scss"></style>
 <script lang="ts" src="./landing.ts"></script>
 <template>
-  <div class="[ justify-center flex pt-20px ]">
+  <div class="[ justify-center flex pt-4 ][ h-full ]">
     <div
       class="[ flex flex-col mx-auto fblg:flex-row fblg:justify-between fblg:max-w-980 ][ fblg:items-center ]"
     >
@@ -80,6 +80,23 @@
           </p>
         </div>
       </div>
+    </div>
+    <!-- Registration Modal -->
+    <div>
+      <b-modal
+        :width="450"
+        v-model="isRegistractionModalActive"
+        has-modal-card
+        close-button-aria-label="Close"
+        aria-modal
+        is-primary
+        @close="toggleRegistrationModal(false)"
+      >
+        <div></div>
+        <template class="[ py-5 ]">
+          <Registration />
+        </template>
+      </b-modal>
     </div>
   </div>
 </template>

@@ -154,6 +154,7 @@ module.exports = {
         'title-layout': '330px 2fr 1fr',
       },
       colors: {
+        '#f5f6f': '#f5f6f',
         error: '#f02849',
         footerLink: '#727679',
         'placeholder-color': '#90949c',
@@ -218,6 +219,7 @@ module.exports = {
       fontSize: {
         28: '28px',
         13: '13px',
+        11: '11px',
         sss: '0.6rem',
         ss: '0.7rem',
         xs: '.75rem',

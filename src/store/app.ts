@@ -7,13 +7,17 @@ const MODULE_NAME = 'App';
 @Module({ namespaced: true, name: MODULE_NAME, dynamic: true, store })
 class Store extends VuexModule {
   private fooBarVal = '';
-
+  private isRegistractionModalActive = false
   // ------------------------------------------------------------------------
   // Getters
   // ------------------------------------------------------------------------
 
   public get fooBar() {
     return this.fooBarVal;
+  }
+
+  public get getIsRegistractionModalActive() {
+    return this.isRegistractionModalActive
   }
 
   // ------------------------------------------------------------------------
@@ -35,6 +39,11 @@ class Store extends VuexModule {
     return value;
   }
 
+  @MultiParamAction()
+  public toggleRegistrationModal(isActive: boolean) {
+    this.setIsRegistrationModalActive(isActive)
+  }
+
   // ------------------------------------------------------------------------
   // Mutations
   // ------------------------------------------------------------------------
@@ -42,6 +51,11 @@ class Store extends VuexModule {
   @Mutation
   private setFooBar(value: string) {
     this.fooBarVal = value;
+  }
+
+  @Mutation
+  private setIsRegistrationModalActive(isActive: boolean): void {
+    this.isRegistractionModalActive = isActive
   }
 }
 

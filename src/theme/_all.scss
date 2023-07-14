@@ -14,3 +14,23 @@
 
 //TODO: import additional global CSS here.
 @import 'bulma';
+
+.animation-content{
+  z-index: 10 !important;
+  overflow-y: auto;
+}
+
+.input{
+  background-color: #f5f6f7 !important;
+}
+.animation-content::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.animation-content::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+.animation-content::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}

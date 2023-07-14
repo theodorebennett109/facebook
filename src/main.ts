@@ -6,6 +6,7 @@ import '@/theme/_all.scss';
 import 'tailwindcss/tailwind.css';
 import Vue from 'vue';
 import Buefy from 'buefy';
+import 'buefy/dist/buefy.css'
 import i18n from '@/config/i18n';
 
 Vue.use(Buefy, {

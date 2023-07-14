@@ -75,6 +75,7 @@
 
           <div class="[ flex justify-center ][ h-54px ][ pt-1.5 ]">
             <span
+              @click="setIsRegistractionModalActive(true)"
               class="[ text-base text-white ][ login-input ][ font-bold ][ px-4 ] [ rounded-lg ][ bg-success hover:bg-darker-green ][ leading-12 ][ no-underline ][ cursor-pointer ]"
               >Create new account</span
             >

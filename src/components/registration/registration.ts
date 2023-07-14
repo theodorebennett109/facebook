@@ -1,19 +1,38 @@
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import { AppStore } from '@/store/app';
-import { Component, Vue } from 'vue-property-decorator';
-const Login = () => import('@/components/login')
-const Registration = () => import('@/components/registration')
 
 @Component({
-  components: { Login, Registration },
-  name: 'landing',
+  components: {},
+  name: 'registration',
 })
-class Landing extends Vue {
+
+
+class Registration extends Vue {
   // --------------------------------------------------------------------------
   // Fields
   // --------------------------------------------------------------------------
 
+  firstName: string = ''
+  lastName: string = ''
+  numOrEmail: string = ''
+  password: string = ''
 
-
+  pronoun: string | null = null
+  optionalGender: string | null = null
+  gender: string | null = null
+  selectedDay = new Date().getDate()
+  selectedMonth = new Date().getMonth()
+  selectedYear = new Date().getFullYear()
+  days = Array.from({ length: 31 }, (_, index) => index + 1)
+  months = [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December'
+  ]
+  years = Array.from({ length: 100 }, (_, index) => new Date().getFullYear() - index)
+  // --------------------------------------------------------------------------
+  // Props
+  // --------------------------------------------------------------------------
+  @Prop({ default: 'default' }) public customProp!: string;
   // --------------------------------------------------------------------------
   // Constructor
   // --------------------------------------------------------------------------
@@ -28,10 +47,6 @@ class Landing extends Vue {
   // --------------------------------------------------------------------------
   // Methods
   // --------------------------------------------------------------------------
-
-  get isRegistractionModalActive() {
-    return AppStore.getIsRegistractionModalActive
-  }
 
   toggleRegistrationModal(isActive: boolean) {
     AppStore.toggleRegistrationModal(isActive)
@@ -49,6 +64,6 @@ class Landing extends Vue {
 }
 
 export {
-  Landing as default,
-  Landing,
+  Registration as default,
+  Registration,
 };

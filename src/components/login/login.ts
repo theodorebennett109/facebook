@@ -1,3 +1,4 @@
+import { AppStore } from '@/store/app';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
@@ -17,6 +18,9 @@ class Login extends Vue {
   incorrectEmail: boolean = false
   incorrectPassword: boolean = false
 
+  setIsRegistractionModalActive(isActive: boolean) {
+    AppStore.toggleRegistrationModal(isActive)
+  }
   // --------------------------------------------------------------------------
   // Props
   // --------------------------------------------------------------------------
