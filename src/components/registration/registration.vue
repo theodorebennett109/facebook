@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./registration.scss"></style>
 <script lang="ts" src="./registration.ts"></script>
 <template>
-  <form class="[ pb-5 rounded-lg bg-white ]" action="">
+  <form class="[ pb-5 rounded-lg bg-white border ]" action="">
     <!-- Sign Up text -->
     <div class="[ py-4 ][ px-5 ]">
       <div class="[ flex justify-between items-center ]">
