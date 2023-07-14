@@ -1,21 +1,20 @@
 <style scoped lang="scss" src="./default.scss"></style>
-<script lang="ts" src="./default.ts">
-</script>
+<script lang="ts" src="./default.ts"></script>
 <template>
-  <div class="[ default ][ grid ]">
-    <!-- Header -->
-    <div class="[ h-12 ]"></div>
-
+  <div class="[ default h-full ]">
     <!-- Body -->
-    <div class="[ grid ]">
+
+    <section
+      class="[ pt-20px fblg:pt-72px pb-112px fblg:pb-48 ][ bg-bg-login ]"
+    >
       <transition name="fade">
         <router-view />
       </transition>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <div class="[ h-12 ]">
-      <AppFooter customProp="Footer" />
-    </div>
+    <section class="[ bg-white ]">
+      <AppFooter />
+    </section>
   </div>
 </template>

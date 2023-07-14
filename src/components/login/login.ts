@@ -1,15 +1,26 @@
-import { Component, Vue } from 'vue-property-decorator';
-const Login = () => import('@/components/login')
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
-  components: { Login },
-  name: 'landing',
+  components: {},
+  name: 'login',
 })
-class Landing extends Vue {
+
+
+class Login extends Vue {
   // --------------------------------------------------------------------------
   // Fields
   // --------------------------------------------------------------------------
 
+  username: string = ''
+  password: string = ''
+
+  incorrectEmail: boolean = false
+  incorrectPassword: boolean = false
+
+  // --------------------------------------------------------------------------
+  // Props
+  // --------------------------------------------------------------------------
+  @Prop({ default: 'default' }) public customProp!: string;
   // --------------------------------------------------------------------------
   // Constructor
   // --------------------------------------------------------------------------
@@ -38,6 +49,6 @@ class Landing extends Vue {
 }
 
 export {
-  Landing as default,
-  Landing,
+  Login as default,
+  Login,
 };

@@ -1,43 +1,57 @@
 import { Component, Vue } from 'vue-property-decorator';
-const Login = () => import('@/components/login')
+import { Dictionary } from 'vue-router/types/router';
+import AppFooter from '@/components/app-footer';
 
 @Component({
-  components: { Login },
-  name: 'landing',
+  components: {
+    AppFooter
+  },
+  name: 'default',
 })
-class Landing extends Vue {
+class Default extends Vue {
   // --------------------------------------------------------------------------
-  // Fields
+  // [Private] Fields
   // --------------------------------------------------------------------------
 
   // --------------------------------------------------------------------------
-  // Constructor
+  // [Public] Constructor
   // --------------------------------------------------------------------------
+
   constructor() {
     super();
   }
 
   // --------------------------------------------------------------------------
-  // Accessors
+  // [Public] Accessors
   // --------------------------------------------------------------------------
 
   // --------------------------------------------------------------------------
-  // Methods
+  // [Public] Methods
+  // --------------------------------------------------------------------------
+
+  public async navigate(path: string, params?: Dictionary<string>) {
+    await this.$router.push({ path, params });
+  }
+
+  // --------------------------------------------------------------------------
+  // [Private] Event Handlers
   // --------------------------------------------------------------------------
 
   // --------------------------------------------------------------------------
-  // Event Handlers
+  // [Private] Methods
   // --------------------------------------------------------------------------
 
   // --------------------------------------------------------------------------
-  // Lifecycle Hooks
+  // [Private] Lifecycle Hooks
   // --------------------------------------------------------------------------
-  public mounted() {
+
+  private mounted() {
     // TODO: stuff to do when this component loads.
+
   }
 }
 
 export {
-  Landing as default,
-  Landing,
+  Default as default,
+  Default,
 };

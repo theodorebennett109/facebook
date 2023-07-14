@@ -48,6 +48,6 @@ class Store extends VuexModule {
 const app = getMultiParamModule<Store>(Store, MODULE_NAME, store);
 
 export {
-    app as AppStore,
+  app as AppStore,
 };
 

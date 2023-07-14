@@ -1,62 +1,324 @@
 module.exports = {
+  purge: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx'],
   enabled: true,
-  content: ["./src/**/**/*.{html,vue,ts,js}"],
-  safeList:[
+  content: ['./src/**/**/*.{html,vue,ts,js}'],
+  safeList: [
     {
-      pattern: /.*/
+      pattern: /.*/,
     },
   ],
   theme: {
-    /**
-     * Color values are defined in /src/theme/colors.scss.
-     * Color names should be sematic in order to provide
-     * contextual alignment when thinking about themes.
-     * E.g. primary-text-color (semantic) vs black-1 (literal)
-     */
-    colors: {
-      inherit: 'inherit',
-      transparent: 'transparent',
-      app: {
-        background: 'var(--app-background)',
-        footer: 'var(--app-footer)',
+    extend: {
+      /**
+       * Color values are defined in /src/theme/colors.scss.
+       * Color names should be sematic in order to provide
+       * contextual alignment when thinking about themes.
+       * E.g. primary-text-color (semantic) vs black-1 (literal)
+       */
+
+      gridTemplateColumns: {
+        // Simple 14 column grid
+        14: 'repeat(14, minmax(0, 1fr))',
       },
-      typography: {
-        primary: 'var(--typography-primary)',
-        secondary: 'var(--typography-secondary)',
-        success: 'var(--typography-success)',
-        error: 'var(--typography-error)',
-        light: 'var(--typography-light)',
+      height: {
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '48px',
+        '1/5': '22%',
+        '4/5': '78%',
+        '1/5a': '23%',
+        '4/5a': '77%',
+        storiesH: '200px',
       },
-      button: {
-        'success': 'var(--button-success)',
-        'failure': 'var(--button-failure)',
+
+      lineHeight: {
+        'extra-loose': '2.5',
+        12: '3rem',
       },
-      border: {
-        'light': 'var(--border-light)',
+      spacing: {
+        '112px': '112px',
+        '72px': '72px',
+        368: '368px',
+        '24px': '24px',
+        '54px': '54px',
+        '10px': '10px',
+        '106px': '106px',
+        '20px': '20px',
+        164: '164px',
+        '60px': '60px',
+
+        'right-sidebar-width': '360px',
+        sidebarLayout: 'calc( 100vh - 58px )',
+        bodyReduced: 'calc( 100% - 64px )',
+        bodyFull: 'calc( 100% - 300px )',
+        69: '69px',
+        56: '56px',
+        bioEditW: '212.22px',
+        biooEditH: '78px',
+        160: '160px',
+        550: '550px',
+        640: '640px',
+        612: '612px',
+        276: '276px',
+
+        coverWidth: '512px',
+        createAvatar: '138px',
+
+        profileEditPic: '168px',
+
+        descriptCol: '349px',
+        headCol: '200px',
+        ProfilepopupH: '454px',
+        ProfilepopupW: '360px',
+        profileNameH: '132px',
+
+        profileInnerSecNameH: '112px',
+        profileInnerSecNameW: '328px',
+        settingDivW: '344px',
+        settingDivH: '52px',
+
+        650: '650px',
+        400: '400px',
+        500: '500px',
+        '292px': '292px',
+        '1px': '1px',
+        mobilefeed: '500px',
+        create: '152px',
+        feed: '680px',
+
+        storiesW: '112.5px',
+        '1/3': '1.5px',
+        '1/2': '3.35px',
+        1.5: '6px',
+        4.5: '18px',
+        4.8: '20px',
+        9: '36px',
+        7: '28px',
+        73: '300px',
+        31: '7rem',
+        49: '13rem',
+        72: '18rem',
+        83: '20rem',
+        84: '21rem',
+        85: '22rem',
+        86: '23rem',
+        87: '24rem',
+        88: '25rem',
+        90: '27rem',
+        sidebarH: '900px',
+
+        96: '29rem',
+        100: '30rem',
+        average: '100%',
+        'titlebar-height': '58px',
+        'fb-logo-size': '120px',
+        search: '600px',
       },
-    },
-    fontSize: {
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
-      '7xl': '5rem',
-      '8xl': '6rem',
-    },
-    screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+
+      backgroundPosition: {
+        groupPos: 'center top -1.5rem',
+        marketPos: 'center bottom -1.5rem',
+        watchPos: 'center bottom ',
+        allPos: 'left bottom 194px ',
+      },
+      backgroundSize: {
+        allSize: '26px 312px',
+      },
+
+      backgroundImage: {
+        home: "url('https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/0eUpMp-7pYy.png')",
+        friends:
+          "url('https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/cHoMfSsiHSi.png')",
+        groups:
+          "url('https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/CGp-6SWWRyX.png')",
+        market:
+          "url('https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/CGp-6SWWRyX.png')",
+        watch:
+          "url('https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/CGp-6SWWRyX.png')",
+        all: "url('https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/tkJdZ7U1seJ.png')",
+      },
+      gridTemplateRows: {
+        // Simple 8 row grid
+        8: 'repeat(8, minmax(0, 1fr))',
+
+        // Complex site-specific row configuration
+        layout: '56px auto',
+      },
+      gridTemplateColumns: {
+        // Simple 8 row grid
+        8: 'repeat(8, minmax(0, 1fr))',
+
+        // Complex site-specific row configuration
+
+        'title-layout': '330px 2fr 1fr',
+      },
+      colors: {
+        error: '#f02849',
+        footerLink: '#727679',
+        'placeholder-color': '#90949c',
+        'input-border-color': 'rgb(221, 223, 226)',
+        'darker-green': '#166fe5',
+        'darker-green': '#36a420',
+        'login-seperator': '#dadde1',
+        'login-intro-text': '#1c1e21',
+        'text-disable-save': '#BCC0C4',
+        selectHobbyBorder: '#ced0d4',
+        saveCol: '#1B74E4',
+        iconBorder: '#0000001a',
+        addHobbiebg: '#caedf9',
+        '#1877f2': '#1877F2',
+        createAvatarButton: '#E7F3FF',
+        rec: '#77797c',
+
+        forget: '#0D55B5',
+        sectionLine: '#e5e5e5',
+        cancelX: '#606770',
+        cancel: '#e4e6eb',
+        settingLink: '#216fdb',
+        'sidebar-divider-hr': '#ced0d4',
+        highlighter: '#1876f2',
+        'home-links-hover': '#00000000',
+        emoji: '#fcd35d',
+        heart: '#f03253',
+        placeholder: '#727477',
+        searchicon: '#65676b',
+        fbapps: '#e4e6eb',
+        'title-border': '#E4E6EB',
+        'fb-logo': '#0571ed',
+        'fb-hover': '#e0e0e0',
+        'letter-colour': '#050505',
+        'fb-bg': '#f0f2f5',
+        link: '#1f2124',
+        'side-footer': '#606770',
+        inherit: 'inherit',
+        success: '#22bb33',
+
+        'bg-login': '#f0f2f5',
+
+        app: {
+          background: 'var(--app-background)',
+          footer: 'var(--app-footer)',
+        },
+        typography: {
+          primary: 'var(--typography-primary)',
+          secondary: 'var(--typography-secondary)',
+          success: 'var(--typography-success)',
+          error: 'var(--typography-error)',
+          light: 'var(--typography-light)',
+        },
+        button: {
+          success: 'var(--button-success)',
+          failure: 'var(--button-failure)',
+        },
+        border: {
+          light: 'var(--border-light)',
+        },
+      },
+      fontSize: {
+        28: '28px',
+        13: '13px',
+        sss: '0.6rem',
+        ss: '0.7rem',
+        xs: '.75rem',
+        sm: '.875rem',
+        m: '15px',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
+        '5xl': '3rem',
+        '6xl': '4rem',
+        '7xl': '5rem',
+        '8xl': '6rem',
+      },
+      minWidth: {
+        0: '0',
+        '1/8': '12.5%',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        full: '100%',
+        feed: '680px',
+        500: '500px',
+      },
+
+      maxWidth: {
+        0: '0',
+        '1/8': '12.5%',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        full: '100%',
+        feed: '680px',
+        feedMid590: '590px',
+        feedReduce500: '500px',
+        500: '500px',
+        450: '450px',
+        423: '423px',
+        400: '400px',
+        980: '980px',
+        650: '650px',
+      },
+
+      maxHeight: {
+        0: '0',
+        '1/8': '12.5%',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        full: '100%',
+        feed: '680px',
+        feedMid590: '590px',
+        feedReduce500: '500px',
+        500: '500px',
+        450: '450px',
+        423: '423px',
+        400: '400px',
+        650: '650px',
+        980: '980px',
+      },
+
+      minWidth: {
+        0: '0',
+        '1/8': '12.5%',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        full: '100%',
+        feed: '680px',
+        feedMid590: '590px',
+        feedReduce500: '500px',
+        500: '500px',
+        450: '450px',
+        423: '423px',
+        400: '400px',
+        300: '300px',
+        980: '980px',
+      },
+
+      screens: {
+        ss: '320px',
+        sm: '640px',
+        md: '768px',
+        mdd: '950px',
+        fblg: '900px',
+        lg: '1000px',
+        xl: '1280px',
+        '2xl': '1536px',
+        sidebarPoint: '1159px',
+
+        'feed-FulPoint': '1734px',
+        'feed-MidPoint': '1650px',
+        lg1076: '1076px',
+      },
     },
   },
-  variants: {},
+  variants: {
+    visibility: ['group-hover'],
+    // backgroundColor:['group-hover']
+  },
   plugins: [],
 };

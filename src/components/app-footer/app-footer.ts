@@ -11,6 +11,9 @@ class AppFooter extends Vue {
   // Fields
   // --------------------------------------------------------------------------
 
+  languages = [{ name: 'English (US)', isLanguageActive: true }, { name: 'Français (France)', isLanguageActive: false }, { name: 'Español', isLanguageActive: false },
+  { name: 'Bahasa Indonesia', isLanguageActive: false }, { name: 'Italiano', isLanguageActive: false }, { name: 'Deutsch', isLanguageActive: false }, { name: 'Português (Brasil)', isLanguageActive: false },
+  { name: '中文(简体)', isLanguageActive: false }, { name: 'العربية', isLanguageActive: false }, { name: 'हिन्दी', isLanguageActive: false }, { name: '日本語', isLanguageActive: false },]
   // --------------------------------------------------------------------------
   // Props
   // --------------------------------------------------------------------------

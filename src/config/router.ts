@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+const HomePage = () => import(/* webpackChunkName: "home" */ '@/pages/home')
+const LandingPage = () => import(/* webpackChunkName: "landing" */ '@/pages/landing')
 
 // tslint:disable-next-line
 const { default: generatedRoutes } = require('../../.rdvue/routes.js');
@@ -9,6 +11,7 @@ Vue.use(Router);
 export enum Page {
   Hello = 'hello-world',
   NotFound = 'not-found',
+  Landing = 'landing'
 }
 
 export default new Router({
@@ -16,22 +19,15 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/buefy-sample',
-      name: 'buefy-sample',
-      component: require('@/pages/buefy-sample/buefy-sample.vue').default
-    },
-    ...generatedRoutes,
-    {
       path: '/',
-      name: Page.Hello,
+      name: Page.Landing,
       meta: {
         layout: 'default',
       },
-      component: () =>
-        import(
-          /* webpackChunkName: "hello-world" */
-          '@/pages/hello-world'),
+      component: LandingPage,
     },
+    ...generatedRoutes,
+
     {
       path: '*',
       name: Page.NotFound,
