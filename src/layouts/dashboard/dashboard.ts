@@ -1,14 +1,16 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { Dictionary } from 'vue-router/types/router';
-import AppFooter from '@/components/app-footer';
+import Titlebar from '@/components/titlebar';
+import Sidebar from '@/components/sidebar';
+import RightSidePanel from '@/components/right-side-panel';
 
 @Component({
   components: {
-    AppFooter
+    Titlebar, Sidebar, RightSidePanel
   },
-  name: 'default',
+  name: 'dashboard',
 })
-class Default extends Vue {
+class Dashboard extends Vue {
   // --------------------------------------------------------------------------
   // [Private] Fields
   // --------------------------------------------------------------------------
@@ -52,6 +54,6 @@ class Default extends Vue {
 }
 
 export {
-  Default as default,
-  Default,
+  Dashboard as default,
+  Dashboard,
 };

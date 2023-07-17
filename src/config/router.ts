@@ -11,13 +11,15 @@ Vue.use(Router);
 export enum Page {
   Hello = 'hello-world',
   NotFound = 'not-found',
-  Landing = 'landing'
+  Landing = 'landing',
+  Home = 'home'
 }
 
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // Landing
     {
       path: '/',
       name: Page.Landing,
@@ -25,6 +27,14 @@ export default new Router({
         layout: 'default',
       },
       component: LandingPage,
+    },
+    {
+      path: '/home',
+      name: Page.Home,
+      meta: {
+        layout: 'dashboard',
+      },
+      component: HomePage,
     },
     ...generatedRoutes,
 

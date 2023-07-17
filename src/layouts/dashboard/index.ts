@@ -1,2 +1,2 @@
-export { default } from './default.vue';
+export { default } from './dashboard.vue';
 
