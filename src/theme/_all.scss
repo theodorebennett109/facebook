@@ -20,7 +20,7 @@
   overflow-y: auto;
 }
 
-.input{
+.registration{
   background-color: #f5f6f7 !important;
 }
 .animation-content::-webkit-scrollbar {
@@ -37,3 +37,13 @@
 
 .modal-background {
   background-color: rgba(255, 255, 255, 0.86) !important;}
+
+
+  .search {
+    background-color: #f5f6f7 !important;
+    border: none !important;
+  }
+
+  .search:focus,select:focus,.registration:focus {
+    box-shadow:none !important;
+  }

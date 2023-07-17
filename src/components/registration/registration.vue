@@ -23,17 +23,26 @@
         type="is-dark"
         class="[ mr-3 mb-0 ]"
       >
-        <b-input placeholder="First name" v-model="firstName"></b-input>
+        <b-input
+          custom-class="[ registration ]"
+          placeholder="First name"
+          v-model="firstName"
+        ></b-input>
       </b-field>
 
       <b-field type="is-dark">
-        <b-input placeholder="Last name" v-model="lastName"></b-input>
+        <b-input
+          custom-class="[ registration ]"
+          placeholder="Last name"
+          v-model="lastName"
+        ></b-input>
       </b-field>
     </div>
 
     <div class="[ px-5 ][ my-3 ]">
       <b-field type="is-dark">
         <b-input
+          custom-class="[ registration ]"
           placeholder="Mobile number or email"
           v-model="numOrEmail"
         ></b-input>
@@ -42,7 +51,11 @@
 
     <div class="[ px-5 ][ mt-5 mb-3 ]">
       <b-field type="is-dark">
-        <b-input placeholder="Password" v-model="password"></b-input>
+        <b-input
+          custom-class="[ registration ]"
+          placeholder="Password"
+          v-model="password"
+        ></b-input>
       </b-field>
 
       <div class="[ flex items-center text-xs ]">
@@ -63,7 +76,12 @@
           </b-select>
         </b-field>
         <b-field type="is-dark" class="[ w-1/3 mb-0 ][ mx-3 ]">
-          <b-select expanded v-model="selectedDay" placeholder="Day">
+          <b-select
+            custom-class="[ registration ]"
+            expanded
+            v-model="selectedDay"
+            placeholder="Day"
+          >
             <option v-for="day in days" :key="day" :value="day">
               {{ day }}
             </option>
@@ -143,6 +161,7 @@
 
       <b-field v-if="gender == 'custom'" type="is-dark">
         <b-input
+          custom-class="[ registration ]"
           placeholder="Gender (optional)"
           v-model="optionalGender"
         ></b-input>

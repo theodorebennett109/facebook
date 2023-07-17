@@ -4,7 +4,7 @@
   <div class="[ dashboard ][ grid ]">
     <!-- Titlebar -->
 
-    <section><Titlebar /></section>
+    <section class="[ sticky top-0 ]"><Titlebar /></section>
 
     <div class="[ flex ]">
       <!-- Sidebar Navigation Bar-->
