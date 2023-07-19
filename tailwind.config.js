@@ -161,19 +161,8 @@ module.exports = {
         emoji: '#fcd35d',
         heart: '#f03253',
         placeholder: '#727477',
-        searchicon: '#65676b',
-        fbapps: '#e4e6eb',
-        'title-border': '#E4E6EB',
-        'fb-logo': '#0571ed',
-        'fb-hover': '#e0e0e0',
-        'letter-colour': '#050505',
-        'fb-bg': '#f0f2f5',
-        link: '#1f2124',
-        'side-footer': '#606770',
-        inherit: 'inherit',
-        success: '#22bb33',
-
-        'bg-login': '#f0f2f5',
+        '#f0f2f5': '#f0f2f5',
+        '#e4e6e9': '#e4e6e9',
 
         app: {
           background: 'var(--app-background)',
@@ -198,6 +187,7 @@ module.exports = {
         28: '28px',
         '8px': '8px',
         13: '13px',
+        15: '15px',
         11: '11px',
         sss: '0.6rem',
         ss: '0.7rem',
@@ -233,7 +223,6 @@ module.exports = {
         '1/2': '50%',
         '3/4': '75%',
         full: '100%',
-        feed: '680px',
         feedMid590: '590px',
         feedReduce500: '500px',
         500: '500px',
@@ -242,6 +231,7 @@ module.exports = {
         400: '400px',
         980: '980px',
         650: '650px',
+        680: '680px',
       },
 
       maxHeight: {
@@ -291,7 +281,7 @@ module.exports = {
         '2xl': '1536px',
         1159: '1159px',
 
-        'feed-FulPoint': '1734px',
+        '1744px': '1744px',
         'feed-MidPoint': '1650px',
         lg1076: '1076px',
       },

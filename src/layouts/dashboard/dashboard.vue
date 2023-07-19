@@ -8,17 +8,18 @@
 
     <div class="[ flex ]">
       <!-- Sidebar Navigation Bar-->
-      <section>
+      <section class="[ fixed left-0 ]">
         <Sidebar />
       </section>
       <!-- Body -->
-      <div class="[ grid ]">
+
+      <div class="[ grid ][ mr-300 ml-360 ]">
         <transition name="fade">
           <router-view />
         </transition>
       </div>
       <!-- Right side panel -->
-      <section>
+      <section class="[ fixed right-0 ]">
         <RightSidePanel />
       </section>
     </div>

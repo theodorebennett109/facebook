@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./titlebar.scss"></style>
 <script lang="ts" src="./titlebar.ts"></script>
 <template>
-  <div class="[ titlebar ][ h-56 px-4 ][ bg-white ]">
+  <div class="[ titlebar ][ h-56 px-4 ][ bg-white shadow-lg ]">
     <div class="[ flex justify-between ][ h-full ]">
       <!-- Logo -->
       <div class="[ flex items-center ][ cursor-pointer 1159:w-300 w-32 ]">
@@ -12,7 +12,7 @@
       <div
         class="[ hidden 899:flex items-center ][ cursor-pointer w-full justify-center ]"
       >
-        <b-field class="[ w-500 justify-center ]" type="is-dark">
+        <b-field class="[ w-500 1744px:w-680 justify-center ]" type="is-dark">
           <b-autocomplete
             class="[ w-full ]"
             expanded
@@ -35,7 +35,7 @@
         ></span>
       </div>
 
-      <!-- Right Panel -->
+      <!-- Right section -->
       <div class="[ w-40 1159:w-360 flex ][ justify-end items-center ]">
         <!-- Messenger -->
         <div
