@@ -8,12 +8,14 @@
 
     <div class="[ flex ]">
       <!-- Sidebar Navigation Bar-->
-      <section class="[ fixed left-0 ][ overflow-x-auto ][ h-sidebarH ]">
+      <section
+        class="[ sidebarSection fixed left-0 ][ overflow-x-auto ][ h-sidebarH ]"
+      >
         <Sidebar />
       </section>
       <!-- Body -->
 
-      <div class="[ grid ][ mr-300 ml-360 ]">
+      <div class="[ grid ][ ml-16 mr-300 1159:ml-360 ]">
         <transition name="fade">
           <router-view />
         </transition>

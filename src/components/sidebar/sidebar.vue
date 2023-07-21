@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./sidebar.scss"></style>
 <script lang="ts" src="./sidebar.ts"></script>
 <template>
-  <div class="[ sidebar ][ w-300 ][ py-4 ]">
+  <div class="[ sidebar ][ w-16 1159:w-300 ][ py-4 ]">
     <div
       class="[ h-10 ][ mb-1 ][ cursor-pointer ]"
       v-for="icon in iconList"
@@ -16,7 +16,7 @@
         <!-- icon/image heading -->
         <div
           :class="[icon.hasImage ? 'px-3' : 'px-4']"
-          class="[ w-full flex items-center ][ hover:bg-#e4e6e9 ][ ml-1 rounded-md ]"
+          class="[ w-full flex items-center justify-center 1159:justify-start ][ hover:bg-#e4e6e9 ][ ml-1 rounded-md ]"
           @click="selectIcon(icon)"
         >
           <i
@@ -33,9 +33,10 @@
             alt=""
           />
 
-          <span class="[ text-15 text- font-medium text-black ][ ml-3 ]">{{
-            icon.heading
-          }}</span>
+          <span
+            class="[ hidden 1159:block text-15 text- font-medium text-black ][ ml-3 ]"
+            >{{ icon.heading }}</span
+          >
         </div>
       </div>
     </div>
