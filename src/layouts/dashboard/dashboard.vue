@@ -8,7 +8,7 @@
 
     <div class="[ flex ]">
       <!-- Sidebar Navigation Bar-->
-      <section class="[ fixed left-0 ]">
+      <section class="[ fixed left-0 ][ overflow-x-auto ][ h-sidebarH ]">
         <Sidebar />
       </section>
       <!-- Body -->

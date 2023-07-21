@@ -82,14 +82,13 @@ module.exports = {
         87: '24rem',
         88: '25rem',
         90: '27rem',
-        sidebarH: '900px',
-
         96: '29rem',
         100: '30rem',
         average: '100%',
         'titlebar-height': '58px',
         'fb-logo-size': '120px',
         search: '600px',
+        sidebarH: 'calc( 100vh - 56px )',
       },
 
       backgroundPosition: {
