@@ -15,13 +15,15 @@
       </section>
       <!-- Body -->
 
-      <div class="[ grid ][ ml-16 mr-300 1159:ml-360 ]">
+      <div class="[ grid ][ ml-16 899:mr-300 1159:ml-360 ]">
         <transition name="fade">
           <router-view />
         </transition>
       </div>
       <!-- Right side panel -->
-      <section class="[ fixed right-0 ]">
+      <section
+        class="[ fixed right-0 ][ sidebarSection ][ overflow-x-auto ][ h-sidebarH ][ 899:flex hidden ]"
+      >
         <RightSidePanel />
       </section>
     </div>

@@ -34,7 +34,7 @@
           />
 
           <span
-            class="[ hidden 1159:block text-15 text- font-medium text-black ][ ml-3 ]"
+            class="[ hidden 1159:block text-15 font-medium text-black ][ ml-3 ]"
             >{{ icon.heading }}</span
           >
         </div>
