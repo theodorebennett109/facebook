@@ -15,7 +15,7 @@
       </section>
       <!-- Body -->
 
-      <div class="[ grid ][ ml-16 899:mr-300 1159:ml-360 ]">
+      <div class="[ grid ][ ml-16 899:mr-300 1159:ml-360 ][ px-8 py-4 ]">
         <transition name="fade">
           <router-view />
         </transition>
