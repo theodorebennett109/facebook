@@ -1,7 +1,7 @@
 <style scoped lang="scss" src="./login.scss"></style>
 <script lang="ts" src="./login.ts"></script>
 <template>
-  <div class="[ login ][ flex justify-center ][ fblg:py-20px ]">
+  <div class="[ login ][ flex justify-center ][ 899:py-20px ]">
     <div class="[ w-88 ]">
       <div class="[ bg-white shadow-xl ][ rounded-lg ][ pb-24px pt-10px ]">
         <form>
@@ -76,7 +76,7 @@
           <div class="[ flex justify-center ][ h-54px ][ pt-1.5 ]">
             <span
               @click="setIsRegistractionModalActive(true)"
-              class="[ text-base text-white ][ login-input ][ font-bold ][ px-4 ] [ rounded-lg ][ bg-success hover:bg-darker-green ][ leading-12 ][ no-underline ][ cursor-pointer ]"
+              class="[ text-base text-white ][ login-input ][ font-bold ][ px-4 ] [ rounded-lg ][ bg-green-500 hover:bg-green-600 ][ leading-12 ][ no-underline ][ cursor-pointer ]"
               >Create new account</span
             >
           </div>

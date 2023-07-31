@@ -3,10 +3,10 @@
 <template>
   <div class="[ justify-center flex pt-4 ][ h-full ]">
     <div
-      class="[ flex flex-col mx-auto fblg:flex-row fblg:justify-between fblg:max-w-980 ][ fblg:items-center ]"
+      class="[ flex flex-col mx-auto 899:flex-row 899:justify-between 899:max-w-980 ][ 899:items-center ]"
     >
-      <div class="[ fblg:pb-24 fblg:px-10 ]">
-        <div class="[ flex justify-center fblg:justify-start fblg:-ml-7 ]">
+      <div class="[ 899:pb-24 899:px-10 ]">
+        <div class="[ flex justify-center 899:justify-start 899:-ml-7 ]">
           <svg
             class="[ h-106px ][ w-73 ][ text-#1877f2 fill-current ]"
             id="Layer_1"
@@ -53,7 +53,7 @@
         <div>
           <p
             id="default-greeting"
-            class="[ font-normal text-2xl text-login-intro-text h-56 leading-7 text-center fblg:text-left lg1076:text-28 w-400 fblg:w-368 lg1076:w-500 ]"
+            class="[ font-normal text-2xl text-login-intro-text h-56 leading-7 text-center 899:text-left lg1076:text-28 w-400 899:w-368 lg1076:w-500 ]"
           >
             Connect with friends and the world around you on Facebook.
           </p>

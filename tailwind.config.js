@@ -39,6 +39,7 @@ module.exports = {
       spacing: {
         '22px': '22px',
         '112.5px': '112.5px',
+        '125px': '125px',
         '72px': '72px',
         200: '200px',
         '24px': '24px',
@@ -63,7 +64,7 @@ module.exports = {
         '292px': '292px',
         '1px': '1px',
         '1/3': '1.5px',
-        '1/2': '3.35px',
+
         1.5: '6px',
         4.5: '18px',
         4.8: '20px',
@@ -74,6 +75,7 @@ module.exports = {
         31: '7rem',
         49: '13rem',
         72: '18rem',
+        73: '300px',
         83: '20rem',
         84: '21rem',
         85: '22rem',
@@ -83,6 +85,8 @@ module.exports = {
         90: '27rem',
         96: '29rem',
         100: '30rem',
+        368: '368px',
+        '112px': '112px',
 
         sidebarH: 'calc( 100vh - 56px )',
       },
@@ -94,6 +98,9 @@ module.exports = {
         '#1877f2': '#1877F2',
         '#f0f2f5': '#f0f2f5',
         '#e4e6e9': '#e4e6e9',
+        'login-seperator': '#dadde1',
+        'login-intro-text': '#1c1e21',
+        error: '#f02849',
 
         app: {
           background: 'var(--app-background)',
@@ -178,6 +185,7 @@ module.exports = {
         '2xl': '1536px',
         1159: '1159px',
         '1744px': '1744px',
+        lg1076: '1076px',
       },
     },
   },

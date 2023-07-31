@@ -4,9 +4,7 @@
   <div class="[ default h-full ]">
     <!-- Body -->
 
-    <section
-      class="[ pt-20px fblg:pt-72px pb-112px fblg:pb-48 ][ bg-bg-login ]"
-    >
+    <section class="[ pt-20px 899:pt-72px pb-112px 899:pb-48 ][ bg-#f0f2f5 ]">
       <transition name="fade">
         <router-view />
       </transition>
